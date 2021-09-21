@@ -1,11 +1,11 @@
 pipeline {
   agent {
-    docker { image 'node:16-alpine' }
+    docker { image 'node:14' }
   }
   stages {
-    stage('Test') {
+    stage('Clone') {
       steps {
-        sh 'node --version'
+        sh 'git clone https://github.com/hoanglvh/jenkins-pipeline.git'
       }
     }
     stage ('push docker hub'){
