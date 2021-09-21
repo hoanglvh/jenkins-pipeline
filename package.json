@@ -1,0 +1,13 @@
+{
+    "name": "nodejs-basic-server",
+    "description": "Nodejs Basic Server",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {
+        "http": "0.0.1-security"
+    },
+    "scripts": {
+        "start": "node server.js"
+    }
+}
